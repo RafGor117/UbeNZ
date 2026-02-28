@@ -9,7 +9,7 @@
             nav_cta: 'Wypełnij ankietę',
             hero_badge: 'Bezpłatne porównanie ofert',
             hero_h1: 'Zabezpiecz przyszłość swojej rodziny — <span class="text-accent">znajdź idealną polisę</span>',
-            hero_sub: 'Sprawdź, jak niewielka kwota miesięcznie może dać Twojej rodzinie spokój i bezpieczeństwo finansowe. Porównaj oferty najlepszych ubezpieczycieli w 40 sekund.',
+            hero_sub: 'Sprawdź, jak niewielka kwota miesięcznie może dać Twojej rodzinie spokój i bezpieczeństwo finansowe. Porównaj oferty najlepszych ubezpieczycieli w Polsce.',
             hero_btn: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right:8px"><path d="M10 2l-7 5v8c0 3 7 5 7 5s7-2 7-5V7l-7-5z" fill="#fff" fill-opacity="0.2" stroke="#fff" stroke-width="1.5"/></svg>Sprawdź swoją wycenę <span class="arr">→</span>',
             social_count: '2,847+ osób',
             social_text: 'już porównało oferty w tym miesiącu',
