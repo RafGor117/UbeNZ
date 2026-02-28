@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polisy na życie - porównaj ubezpieczenia i uzyskaj wycenę</title>
+    <meta name="description" content="Porównaj polisy na życie od najlepszych towarzystw w Polsce. Krótka ankieta, bezpłatna wycena, zero zobowiązań. PZU, Allianz, Generali, Nationale-Nederlanden i inne.">
+
+    <meta property="og:title" content="Polisy na życie - porównaj ubezpieczenia online">
+    <meta property="og:description" content="Odpowiedz na kilka pytań i otrzymaj bezpłatną wycenę ubezpieczenia na życie.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+
+    <link rel="canonical" href="https://polisynazycie.pl">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="/" class="logo">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+                    <path d="M16 7l-8 5.5v9c0 4 8 6.5 8 6.5s8-2.5 8-6.5v-9L16 7z" fill="#fff" fill-opacity="0.9"/>
+                    <path d="M12 15.5l3 3 5.5-5.5" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                            <stop stop-color="#3b82f6"/>
+                            <stop offset="1" stop-color="#8b5cf6"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span data-i18n="brand">PolisyNaZycie.pl</span>
+            </a>
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="pl">PL</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ua">UA</button>
+                </div>
+                <a href="#ankieta" class="nav-cta" data-i18n="nav_cta">Wypełnij ankietę</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO + SURVEY wrapper z jednym gradientem -->
+    <div class="hero-survey-wrapper">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg-shapes">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero_h1">Zabezpiecz przyszłość swojej rodziny — <span class="text-accent">znajdź idealną polisę</span></h1>
+                <p class="hero-sub" data-i18n="hero_sub">Sprawdź, jak niewielka kwota miesięcznie może dać Twojej rodzinie spokój i bezpieczeństwo finansowe. Porównaj oferty najlepszych ubezpieczycieli w Polsce.</p>
+                <div class="hero-actions">
+                    <a href="#ankieta" class="btn btn-primary btn-lg" data-i18n="hero_btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right:8px">
+                            <path d="M10 2l-7 5v8c0 3 7 5 7 5s7-2 7-5V7l-7-5z" fill="#fff" fill-opacity="0.2" stroke="#fff" stroke-width="1.5"/>
+                        </svg>
+                        Sprawdź swoją wycenę <span class="arr">→</span>
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <span class="trust-chip">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="#dcfce7"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span data-i18n="trust1">100% za darmo</span>
+                    </span>
+                    <span class="trust-chip">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="#dcfce7"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span data-i18n="trust2">Bez zobowiązań</span>
+                    </span>
+                    <span class="trust-chip">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="9" fill="#dcfce7"/><path d="M5.5 9l2.5 2.5 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span data-i18n="trust3">Zajmie ok. 40 sekund</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SURVEY - główny cel strony, kontynuacja gradientu hero -->
+    <section class="section section-survey" id="ankieta">
+        <div class="container">
+            <div class="survey-wrap">
+                <div class="survey-head">
+                    <h2 data-i18n="survey_title">Uzyskaj bezpłatną wycenę</h2>
+                    <p data-i18n="survey_sub">Krótka ankieta — odpowiedzi zajmą chwilę</p>
+                </div>
+
+                <div class="survey-progress">
+                    <div class="survey-progress-fill" id="progressFill"></div>
+                </div>
+
+                <form id="surveyForm" novalidate>
+
+                    <!-- 1 — wiek -->
+                    <div class="sv active" data-step="1">
+                        <p class="sv-label" data-i18n="sv_step">Krok <span class="sv-cur">1</span> z 6</p>
+                        <h3 class="sv-q" data-i18n="q1">W jakim jesteś wieku?</h3>
+                        <div class="pills">
+                            <button type="button" class="pill" data-name="wiek" data-value="20-30">20 – 30</button>
+                            <button type="button" class="pill" data-name="wiek" data-value="31-40">31 – 40</button>
+                            <button type="button" class="pill" data-name="wiek" data-value="41-50">41 – 50</button>
+                            <button type="button" class="pill" data-name="wiek" data-value="51-60">51 – 60</button>
+                            <button type="button" class="pill" data-name="wiek" data-value="61+">61+</button>
+                        </div>
+                        <span class="sv-err" id="err1"></span>
+                    </div>
+
+                    <!-- 2 — kwota -->
+                    <div class="sv" data-step="2">
+                        <p class="sv-label" data-i18n="sv_step">Krok <span class="sv-cur">2</span> z 6</p>
+                        <h3 class="sv-q" data-i18n="q2">Jaką kwotę ubezpieczenia rozważasz?</h3>
+                        <div class="range-block">
+                            <output class="range-output" id="rangeVal">150 000 zł</output>
+                            <input type="range" id="rangeInput" min="50000" max="700000" step="10000" value="150000">
+                            <div class="range-ends"><span>50 tys.</span><span>700 tys.</span></div>
+                        </div>
+                        <span class="sv-err" id="err2"></span>
+                        <div class="sv-buttons">
+                            <button type="button" class="btn btn-back sv-back" data-go="1" data-i18n="btn_back">← Wstecz</button>
+                            <button type="button" class="btn btn-primary sv-next" data-go="3" data-i18n="btn_next">Dalej</button>
+                        </div>
+                    </div>
+
+                    <!-- 3 — kod -->
+                    <div class="sv" data-step="3">
+                        <p class="sv-label" data-i18n="sv_step">Krok <span class="sv-cur">3</span> z 6</p>
+                        <h3 class="sv-q" data-i18n="q3">Jaki jest Twój kod pocztowy?</h3>
+                        <p class="sv-hint" data-i18n="q3_hint">Dzięki temu dopasujemy agenta w Twojej okolicy.</p>
+                        <div class="sv-field"><input type="text" id="fKod" placeholder="np. 00-001" maxlength="6" autocomplete="postal-code"></div>
+                        <span class="sv-err" id="err3"></span>
+                        <div class="sv-buttons">
+                            <button type="button" class="btn btn-back sv-back" data-go="2" data-i18n="btn_back">← Wstecz</button>
+                            <button type="button" class="btn btn-primary sv-next" data-go="4" data-i18n="btn_next">Dalej</button>
+                        </div>
+                    </div>
+
+                    <!-- 4 — email -->
+                    <div class="sv" data-step="4">
+                        <p class="sv-label" data-i18n="sv_step_almost">Krok <span class="sv-cur">4</span> z 6 — prawie gotowe!</p>
+                        <h3 class="sv-q" data-i18n="q4">Na jaki e-mail wysłać wycenę?</h3>
+                        <div class="sv-field"><input type="email" id="fEmail" placeholder="jan@example.pl" autocomplete="email"></div>
+                        <span class="sv-err" id="err4"></span>
+                        <div class="sv-buttons">
+                            <button type="button" class="btn btn-back sv-back" data-go="3" data-i18n="btn_back">← Wstecz</button>
+                            <button type="button" class="btn btn-primary sv-next" data-go="5" data-i18n="btn_next">Dalej</button>
+                        </div>
+                    </div>
+
+                    <!-- 5 — imię i nazwisko -->
+                    <div class="sv" data-step="5">
+                        <p class="sv-label" data-i18n="sv_step">Krok <span class="sv-cur">5</span> z 6</p>
+                        <h3 class="sv-q" data-i18n="q5">Jak się nazywasz?</h3>
+                        <div class="sv-field-row">
+                            <div class="sv-field"><input type="text" id="fImie" placeholder="Imię" autocomplete="given-name"></div>
+                            <div class="sv-field"><input type="text" id="fNazwisko" placeholder="Nazwisko" autocomplete="family-name"></div>
+                        </div>
+                        <span class="sv-err" id="err5"></span>
+                        <div class="sv-buttons">
+                            <button type="button" class="btn btn-back sv-back" data-go="4" data-i18n="btn_back">← Wstecz</button>
+                            <button type="button" class="btn btn-primary sv-next" data-go="6" data-i18n="btn_next">Dalej</button>
+                        </div>
+                    </div>
+
+                    <!-- 6 — telefon -->
+                    <div class="sv" data-step="6">
+                        <p class="sv-label" data-i18n="sv_step_last">Ostatni krok!</p>
+                        <h3 class="sv-q" data-i18n="q6">Twój numer telefonu</h3>
+                        <p class="sv-hint" data-i18n="q6_hint">Doradca zadzwoni pod ten numer z ofertą.</p>
+                        <div class="sv-field"><input type="tel" id="fTel" placeholder="500 000 000" autocomplete="tel"></div>
+                        <label class="sv-check">
+                            <input type="checkbox" id="fConsent">
+                            <span data-i18n="consent">Wyrażam zgodę na kontakt telefoniczny i przetwarzanie danych osobowych w celu przedstawienia oferty ubezpieczenia na życie.*</span>
+                        </label>
+                        <span class="sv-err" id="err6"></span>
+                        <div class="sv-buttons">
+                            <button type="button" class="btn btn-back sv-back" data-go="5" data-i18n="btn_back">← Wstecz</button>
+                            <button type="submit" class="btn btn-primary btn-lg" data-i18n="btn_submit">Wyślij i porównaj oferty</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- done -->
+                <div class="sv-done" id="svDone">
+                    <div class="sv-done-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="#C6F6D5"/><path d="M20 32l9 9 15-16" stroke="#22543D" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-i18n="done_h">Dziękujemy!</h3>
+                    <p><span data-i18n="done_p1">Twoje zgłoszenie zostało przyjęte.</span> <span data-i18n="done_p2">Doradca odezwie się w ciągu</span> <strong>24h</strong> <span data-i18n="done_p3">z dopasowaną ofertą.</span></p>
+                </div>
+
+                <div class="survey-foot" id="surveyFoot">
+                    <span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align:-2px;margin-right:4px">
+                            <rect x="3" y="7" width="10" height="7" rx="2" stroke="#94a3b8" stroke-width="1.5"/>
+                            <path d="M5 7V5a3 3 0 016 0v2" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span data-i18n="sf1">Dane szyfrowane i chronione</span>
+                    </span>
+                    <span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="vertical-align:-2px;margin-right:4px">
+                            <circle cx="8" cy="8" r="6.5" stroke="#94a3b8" stroke-width="1.5"/>
+                            <path d="M8 4.5v4l2.5 1.5" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span data-i18n="sf2">Zajmie ok. 40 sekund</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PARTNERS - wewnątrz hero-survey-wrapper -->
+    <section class="section section-partners">
+        <div class="container">
+            <div class="partners-logos">
+                <img src="img/logos/allianz.png" alt="UNIQA" class="partner-img" loading="lazy">
+                <img src="img/logos/generali.png" alt="Allianz" class="partner-img" loading="lazy">
+                <img src="img/logos/uniqa.png" alt="Generali" class="partner-img" loading="lazy">
+                <img src="img/logos/pzu.png" alt="PZU" class="partner-img" loading="lazy">
+                <img src="img/logos/warta.png" alt="Warta" class="partner-img" loading="lazy">
+                <img src="img/logos/viennalife.png" alt="Vienna Life" class="partner-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    </div><!-- /hero-survey-wrapper -->
+
+    <!-- HOW IT WORKS - 3 kroki nad "Dlaczego warto" -->
+    <section class="section section-steps" id="jak-to-dziala">
+        <div class="container">
+            <h2 class="sec-title" data-i18n="how_title">Jak to działa?</h2>
+            <div class="steps-row">
+                <div class="step-box">
+                    <div class="step-icon-wrap">
+                        <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                            <circle cx="36" cy="36" r="34" stroke="#2563eb" stroke-width="2.5" fill="#f0f7ff"/>
+                            <rect x="22" y="18" width="28" height="36" rx="2" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+                            <path d="M28 28h16M28 36h16M28 44h10" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M44 40l-8 8-4-4" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="step-num">1</div>
+                    <h3 data-i18n="step1_h">Odpowiadasz na pytania</h3>
+                    <p data-i18n="step1_p">Kilka prostych pytań o Twoje potrzeby. Żadnych formalności ani ukrytych haczyków.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="12" viewBox="0 0 40 12" fill="none">
+                        <path d="M0 6h32M28 1l6 5-6 5" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="step-box">
+                    <div class="step-icon-wrap">
+                        <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                            <circle cx="36" cy="36" r="34" stroke="#2563eb" stroke-width="2.5" fill="#f0f7ff"/>
+                            <circle cx="36" cy="36" r="18" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+                            <path d="M36 24v12l8 4" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="36" cy="36" r="3" fill="#f97316"/>
+                        </svg>
+                    </div>
+                    <div class="step-num">2</div>
+                    <h3 data-i18n="step2_h">Porównujemy oferty</h3>
+                    <p data-i18n="step2_p">Analizujemy propozycje od najlepszych towarzystw na rynku i wybieramy te, które pasują do Ciebie.</p>
+                </div>
+                <div class="step-connector">
+                    <svg width="40" height="12" viewBox="0 0 40 12" fill="none">
+                        <path d="M0 6h32M28 1l6 5-6 5" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="step-box">
+                    <div class="step-icon-wrap">
+                        <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                            <circle cx="36" cy="36" r="34" stroke="#2563eb" stroke-width="2.5" fill="#f0f7ff"/>
+                            <circle cx="36" cy="32" r="12" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+                            <path d="M28 56c0-8 3-12 8-12s8 4 8 12" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                            <path d="M50 26l-6 6 6 6" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M44 32h10" stroke="#f97316" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="step-num">3</div>
+                    <h3 data-i18n="step3_h">Dostajesz ofertę</h3>
+                    <p data-i18n="step3_p">Doradca dzwoni z konkretnymi propozycjami. Ty decydujesz — bez presji, w swoim tempie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY - dla niezdecydowanych -->
+    <section class="section section-soft">
+        <div class="container">
+            <h2 class="sec-title" data-i18n="why_title">Dlaczego warto?</h2>
+            <div class="cards-row">
+                <div class="card-box">
+                    <div class="card-ico">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="30" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+                            <path d="M20 32l8 8 16-16" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="w1_h">Szybko i wygodnie</h3>
+                    <p data-i18n="w1_p">Cały proces zajmuje mniej niż minutę. Bez wychodzenia z domu.</p>
+                </div>
+                <div class="card-box">
+                    <div class="card-ico">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <path d="M32 8L12 20v16c0 12 20 20 20 20s20-8 20-20V20L32 8z" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+                            <path d="M24 32l6 6 10-10" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="w2_h">Ochrona na przyszłość</h3>
+                    <p data-i18n="w2_p">Świadczenie z polisy ułatwi Twoim bliskim pokrycie kosztów i innych wydatków.</p>
+                </div>
+                <div class="card-box">
+                    <div class="card-ico">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <path d="M12 52V20l20-12 20 12v32" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M12 52h40" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="24" cy="30" r="4" stroke="#2563eb" stroke-width="2" fill="none"/>
+                            <circle cx="40" cy="30" r="4" stroke="#2563eb" stroke-width="2" fill="none"/>
+                            <circle cx="32" cy="28" r="3" stroke="#2563eb" stroke-width="2" fill="none"/>
+                            <path d="M20 44c0-4 5-7 12-7s12 3 12 7" stroke="#2563eb" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <path d="M32 18v-2" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M28 18l4-4 4 4" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="w3_h">Spokój ducha</h3>
+                    <p data-i18n="w3_p">Inwestując w swoje bezpieczeństwo, chronisz siebie i bliskich przed zbędnym stresem.</p>
+                </div>
+                <div class="card-box">
+                    <div class="card-ico">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="24" r="10" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+                            <path d="M14 54c0-10 8-16 18-16s18 6 18 16" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                            <path d="M44 28l6-6m0 0l6 6m-6-6v16" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="w4_h">Ludzki kontakt</h3>
+                    <p data-i18n="w4_p">Żaden automat — dzwoni prawdziwy doradca, który odpowie na każde pytanie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-white" id="faq">
+        <div class="container">
+            <h2 class="sec-title" data-i18n="faq_title">Często zadawane pytania</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary data-i18n="faq1_q">Ile kosztuje ubezpieczenie na życie?</summary>
+                    <div class="faq-a"><p data-i18n="faq1_a">To zależy od wielu czynników — wieku, sumy ubezpieczenia, stanu zdrowia. Orientacyjnie składki zaczynają się od ok. 35–50 zł/mies. i mogą sięgać 200 zł+ przy szerokim zakresie ochrony.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary data-i18n="faq2_q">Czy ubezpieczenie na życie jest obowiązkowe?</summary>
+                    <div class="faq-a"><p data-i18n="faq2_a">Nie — jest dobrowolne. Natomiast wiele banków wymaga go przy kredycie hipotecznym. Polecane osobom z rodziną na utrzymaniu.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary data-i18n="faq3_q">Jak szybko ktoś się ze mną skontaktuje?</summary>
+                    <div class="faq-a"><p data-i18n="faq3_a">Zwykle w ciągu jednego dnia roboczego. Doradca zadzwoni pod numer, który zostawisz w ankiecie.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary data-i18n="faq4_q">Czy moje dane są bezpieczne?</summary>
+                    <div class="faq-a"><p data-i18n="faq4_a">Tak. Przetwarzamy je zgodnie z RODO wyłącznie w celu przygotowania oferty. Nie udostępniamy ich osobom trzecim.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary data-i18n="faq5_q">Czy muszę się na coś zdecydować od razu?</summary>
+                    <div class="faq-a"><p data-i18n="faq5_a">Nie. Dostajesz propozycje i decydujesz w swoim tempie — bez presji, bez zobowiązań.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-cta">
+        <div class="container cta-inner">
+            <div class="cta-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.1)"/>
+                    <path d="M24 12l-10 7v12c0 5 10 8 10 8s10-3 10-8V19l-10-7z" stroke="#fff" stroke-width="2" fill="rgba(255,255,255,0.1)"/>
+                    <path d="M18 24l4 4 8-8" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h2 data-i18n="cta_h">Twoja rodzina zasługuje na bezpieczeństwo</h2>
+            <p data-i18n="cta_p">Nie odkładaj na później. Sprawdź, jak mało kosztuje spokój ducha. Ankieta trwa 40 sekund.</p>
+            <a href="#ankieta" class="btn btn-white btn-lg" data-i18n="cta_btn">
+                Sprawdź swoją wycenę teraz →
+            </a>
+            <div class="cta-note">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px;margin-right:4px">
+                    <circle cx="7" cy="7" r="7" fill="rgba(255,255,255,0.2)"/>
+                    <path d="M4 7l2 2 4-4" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span data-i18n="cta_note">Bez zobowiązań, bez kosztów</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-brand">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:-3px;margin-right:6px">
+                    <path d="M10 2L3 6v7c0 4 7 6 7 6s7-2 7-6V6l-7-4z" fill="#3b82f6"/>
+                    <path d="M7 10l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                PolisyNaZycie.pl
+            </span>
+            <span class="footer-copy">&copy; 2026 PolisyNaZycie.pl &middot; Wszystkie prawa zastrzeżone</span>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ile kosztuje ubezpieczenie na życie?","acceptedAnswer":{"@type":"Answer","text":"Składki zaczynają się od ok. 35-50 zł miesięcznie i zależą od wieku, sumy ubezpieczenia i zakresu ochrony."}},{"@type":"Question","name":"Czy ubezpieczenie na życie jest obowiązkowe?","acceptedAnswer":{"@type":"Answer","text":"Nie, jest dobrowolne, choć banki często wymagają go przy kredycie hipotecznym."}},{"@type":"Question","name":"Jak szybko otrzymam wycenę?","acceptedAnswer":{"@type":"Answer","text":"Wypełnienie ankiety trwa ok. 40 sekund. Doradca skontaktuje się w ciągu 24 godzin."}}]}
+    </script>
+    <script src="script.js"></script>
+
+<!--
+============================================
+SEKCJE ZACHOWANE NA PRZYSZŁOŚĆ
+============================================
+
+HOW IT WORKS - "Trzy proste kroki":
+<section class="section section-steps" id="jak-to-dziala">
+    <div class="container">
+        <p class="sec-subtitle" data-i18n="how_subtitle">Trzy proste kroki do ochrony Twojej rodziny</p>
+        <div class="steps-row">
+            <div class="step-box">
+                <div class="step-icon-wrap">
+                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                        <circle cx="36" cy="36" r="34" stroke="#2563eb" stroke-width="2.5" fill="#f0f7ff"/>
+                        <rect x="22" y="18" width="28" height="36" rx="2" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+                        <path d="M28 28h16M28 36h16M28 44h10" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M44 40l-8 8-4-4" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="step-num">1</div>
+                <h3 data-i18n="step1_h">Odpowiadasz na pytania</h3>
+                <p data-i18n="step1_p">Kilka prostych pytań o Twoje potrzeby. Żadnych formalności ani ukrytych haczyków.</p>
+            </div>
+            <div class="step-connector">
+                <svg width="40" height="12" viewBox="0 0 40 12" fill="none">
+                    <path d="M0 6h32M28 1l6 5-6 5" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="step-box">
+                <div class="step-icon-wrap">
+                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                        <circle cx="36" cy="36" r="34" stroke="#2563eb" stroke-width="2.5" fill="#f0f7ff"/>
+                        <circle cx="36" cy="36" r="18" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+                        <path d="M36 24v12l8 4" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="36" cy="36" r="3" fill="#f97316"/>
+                    </svg>
+                </div>
+                <div class="step-num">2</div>
+                <h3 data-i18n="step2_h">Porównujemy oferty</h3>
+                <p data-i18n="step2_p">Analizujemy propozycje od najlepszych towarzystw na rynku i wybieramy te, które pasują do Ciebie.</p>
+            </div>
+            <div class="step-connector">
+                <svg width="40" height="12" viewBox="0 0 40 12" fill="none">
+                    <path d="M0 6h32M28 1l6 5-6 5" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="step-box">
+                <div class="step-icon-wrap">
+                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                        <circle cx="36" cy="36" r="34" stroke="#2563eb" stroke-width="2.5" fill="#f0f7ff"/>
+                        <circle cx="36" cy="32" r="12" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+                        <path d="M28 56c0-8 3-12 8-12s8 4 8 12" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                        <path d="M50 26l-6 6 6 6" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <path d="M44 32h10" stroke="#f97316" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="step-num">3</div>
+                <h3 data-i18n="step3_h">Dostajesz ofertę</h3>
+                <p data-i18n="step3_p">Doradca dzwoni z konkretnymi propozycjami. Ty decydujesz — bez presji, w swoim tempie.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+============================================
+-->
+</body>
+</html>
